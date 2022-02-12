@@ -11,7 +11,7 @@ This assumes that shairport loads on boot.
 
 ## Install
 
-`;install https://github.com/tehn/test-update`
+`;install https://github.com/Inkering/sherry`
 
 ## Feature outline (planned)
 
