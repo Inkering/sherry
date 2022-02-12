@@ -19,8 +19,17 @@ function enc(n,d)
 end
 
 function redraw()
-  -- screen redraw
+   -- screen redraw
+   screen.clear()
+   screen.move(0,8)
+   screen.font_size(8)
+   screen.level(15)
+   screen.text("Shairport now routing")
+   screen.move(0, 16)
+   screen.text("to input")
+   screen.update()
 end
+
 
 function cleanup()
   -- deinitialization
