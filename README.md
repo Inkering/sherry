@@ -13,3 +13,5 @@ Shairport norns script, incorporating metadata and potentially eq, vol options.
 * [shairport-sync-metadata-reader](https://github.com/mikebrady/shairport-sync-metadata-reader)
 
 * [shairport-sync](https://github.com/mikebrady/shairport-sync-metadata-reader)
+
+![view of a fates build with options to select input or nothing](docs/demo.jpg)
