@@ -7,3 +7,9 @@ Shairport norns script, incorporating metadata and potentially eq, vol options.
 * shairport-independent volume adjustment
 * eq
 * viewing metadata given by shairport
+
+## references
+
+* [shairport-sync-metadata-reader](https://github.com/mikebrady/shairport-sync-metadata-reader)
+
+* [shairport-sync](https://github.com/mikebrady/shairport-sync-metadata-reader)
