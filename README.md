@@ -1,7 +1,7 @@
 # sherry
 Shairport norns script, incorporating metadata and potentially eq, vol options.
 
-![view of a fates build with options to select input or nothing](docs/demo.jpg)
+![view of a sherry app with options to select input or nothing](docs/sherry1.png)
 
 ## Current features
 
