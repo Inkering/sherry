@@ -41,7 +41,8 @@ scroll = {}
 
 scroll[1] = UI.ScrollingList.new(55,8,1,patches)
 
-local message = "K3 to get song title"
+local title = "K3 to get song title"
+local artist = "and artist"
 
 -- for now, requiring shairport-sync-metadata-reader
 -- TODO internalize base64 decode
@@ -66,7 +67,10 @@ function redraw()
    screen.text("Song")
    screen.move(0,16)
    -- the title from shairplay meta tmp file
-   screen.text(message)
+   screen.text(title)
+   screen.move(0,24)
+   -- the artist from shairplay meta tmp file
+   screen.text(artist)
    scroll[1]:redraw()
    screen.move(0,34)
    screen.level(15)
@@ -89,9 +93,13 @@ function key(n,z)
       local content = f:read("*all")
       f:close()
       for line in magiclines(content) do
-        if line:sub(1, 5) == "Title" then
-          message = line 
-        end
+         if line:sub(1, 5) == "Title" then
+            title = line 
+         end 
+         
+         if line:sub(1,6) == "Artist" then
+            artist = line
+         end
       end
       -- empty the file when we're done
       io.open('/tmp/output.txt',"w"):close()
