@@ -7,9 +7,12 @@
 -- from Github for now.
 -- 
 -- turn any enc to select patch
--- press k1 or k2 to activate
+-- press k2 to activate
 -- activating a patch deactivates
 -- the others
+-- 
+-- press k3 to fetch the current
+-- song
 UI = require("ui")
 
 -- DATA FORMAT, 18 lines post decode
